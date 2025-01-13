@@ -12,7 +12,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD reason, LPVOID lpReserved)
             DisableThreadLibraryCalls(hModule);
             
             // Debug modunu aktifleştir
-            HookManager::EnableDebug(false);
+            HookManager::EnableDebug(true);
             HookManager::DebugLog("[*] DLL_PROCESS_ATTACH\n");
             
             auto& hookManager = HookManager::GetInstance();
